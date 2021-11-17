@@ -1,0 +1,26 @@
+package exercise1;
+import java.util.Scanner;
+public class no2 {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter your weight:");
+	double weight=sc.nextDouble();
+	System.out.println("enter your height:");
+	double height=sc.nextDouble();
+	double BMI=weight/(height*height);
+	
+	if(BMI<18.5) 
+		System.out.printf("UNDERWEIGHT: %.2f",BMI);
+	
+	else if((BMI>=18.5) &&(BMI<=24.9))
+		System.out.printf("NORMAL: %.2f",BMI);
+	
+		else if((BMI>=25)&&(BMI<=29.9)) 
+		System.out.printf("OVERWEIGHT: %.2f",BMI);
+		
+	
+	else
+		System.out.printf("OBESE: %.2f",BMI);
+	
+}
+}
