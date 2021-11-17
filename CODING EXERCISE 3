@@ -1,0 +1,52 @@
+package exercise1;
+import java.util.Scanner;
+public class no3 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String subA,subB;
+		double markA,markB,avg;
+		
+		System.out.println("Enter 2 subjects");
+		subA=sc.nextLine();
+		subB=sc.nextLine();
+		
+		System.out.println("Enter the marks of two subjects");
+		markA=sc.nextDouble();
+		markB=sc.nextDouble();
+		
+		avg=(markA+markB)/2;
+		
+		
+		if(markA>markB)
+			System.out.println("mark for subject "+subA +" is bigger than subject " +subB );
+		else
+			System.out.println("mark for subject "+subB +" is bigger than subject " +subA );
+		
+		if(markA>50)
+			System.out.println(subA+" PASS");
+		else
+			System.out.println(subA+" FAIL");
+		
+		if(markB>50)
+			System.out.println(subB+" PASS");
+		else
+			System.out.println(subB+" FAIL");
+		
+		if((markA>50)&&(markB>50))
+			System.out.println("PASS FOR BOTH SUBJECTS");
+		else
+			System.out.println("FAIL");
+		
+		if((avg<=100)&&(avg>=80))
+			System.out.println("GRADE A");
+		else if((avg<=79)&&(avg>=60))
+			System.out.println("GRADE B");
+		else if((avg<=59)&&(avg>=50))
+			System.out.println("GRADE C");
+		else
+			System.out.println("GRADE F");
+
+	}
+
+}
