@@ -1,0 +1,11 @@
+Enter 2 subjects
+math
+eng
+Enter the marks of two subjects
+87
+45
+mark for subject math is bigger than subject eng
+math PASS
+eng FAIL
+FAIL
+GRADE B
