@@ -1,0 +1,25 @@
+package exercise2;
+import java.util.Scanner;
+public class no9 {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int marks=sc.nextInt();
+	switch (marks/10) { //untuk marks kena bahagi 10
+	case 9:
+	     System.out.println("Excellent: Grade A");break;
+	case 8:
+		 System.out.println("Very Good: Grade B");break;  
+	case 7:
+		 System.out.println("Good: Grade C");break;
+	case 6:
+		 System.out.println("Good: Grade D");break;
+	case 5:
+		 System.out.println("Good: Grade E");break;
+	case 4:
+		 System.out.println("Just Passed: Grade F");break;
+	default:
+		 System.out.println("Failed!");
+	}
+	
+}
+}
