@@ -1,6 +1,25 @@
-76
-Good: Grade C
-Good: Grade D
-Good: Grade E
-Just Passed: Grade F
-Failed!
+package exercise2;
+import java.util.Scanner;
+public class no8 {
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int marks=sc.nextInt();
+	switch (marks/10) {
+	case 9:
+	     System.out.println("Excellent: Grade A");
+	case 8:
+		 System.out.println("Very Good: Grade B");  
+	case 7:
+		 System.out.println("Good: Grade C");
+	case 6:
+		 System.out.println("Good: Grade D");
+	case 5:
+		 System.out.println("Good: Grade E");
+	case 4:
+		 System.out.println("Just Passed: Grade F");
+	default:
+		 System.out.println("Failed!");
+	}
+	
+}
+}
